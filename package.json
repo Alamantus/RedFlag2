@@ -5,7 +5,7 @@
   "main": "index.html",
   "repository": "https://github.com/Alamantus/RedFlag2.git",
   "author": "Robbie Antenesse <dev@alamantus.com>",
-  "license": "AGPLv3",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build"
@@ -14,6 +14,7 @@
     "snowpack": "^3.8.8"
   },
   "dependencies": {
-    "@alamantus/lighter": "https://github.com/Alamantus/lighter.git"
+    "@alamantus/lighter": "https://github.com/Alamantus/lighter.git",
+    "choo": "^7.1.0"
   }
 }
