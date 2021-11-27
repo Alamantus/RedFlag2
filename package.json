@@ -1,0 +1,19 @@
+{
+  "name": "redflag",
+  "version": "0.0.1",
+  "description": "The content warning site",
+  "main": "index.html",
+  "repository": "https://github.com/Alamantus/RedFlag2.git",
+  "author": "Robbie Antenesse <dev@alamantus.com>",
+  "license": "AGPLv3",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "@alamantus/lighter": "https://github.com/Alamantus/lighter.git"
+  }
+}
