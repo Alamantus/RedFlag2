@@ -32,19 +32,68 @@
 </head>
 <body class="mt0 mb0">
 <header class="bg-primary">
-  <nav>
-    <ul class="row mt0 mb0">
-      <li class="col">
-        <h1 class="10 col">
-          <a href="/" class="c-white">RedFlag</a>
+  <nav style="border-bottom:1px solid #fff;">
+    <ul class="row mt0 mb0 p0" style="list-style:none;">
+      <li class="10 col ph1">
+        <h1 class="m0 pv1" style="font-size:unset;">
+          <a href="/" class="bold c-white" style="font-size:18pt;">RedFlag</a>
         </h1>
       </li>
-      <li class="col">
+      <li class="2 col ph1">
         <a href="/about.html" class="c-white">About</a>
       </li>
     </ul>
   </nav>
+  <section class="tc c-white" style="height:30vh;">
+    <article class="vc">
+      <p class="large mb0">Content Warnings Made Simple</p>
+      <p>Put up a warning wall between whoever clicks your link and whatever’s at the end of it with a warning about sensitive content</p>
+    </article>
+  </section>
 </header>
+<main class="c">
+  <form onsubmit="e => e.preventDefault()" action="warn.html">
+    <p>
+      <label class="bold" for="warnings">
+        Warnings
+      </label>
+      <select id="warnings" name="about" class="card w-100" multiple size="3">
+        <optgroup label="Non-JavaScript Options">
+          <option>Abandonment</option><option>Ableism</option><option>Abortion</option><option>Alcohol</option><option>Alcoholism</option><option>Amputation</option><option>Animal Abuse</option><option>Animal Cruelty</option><option>Animal Death</option><option>Animal Violence</option><option>Anxiety</option><option>Autism</option><option>Bipolar Disorder</option><option>Blood</option><option>Body Horror</option><option>Body Shaming</option><option>Bones</option><option>Bullying</option><option>Cannibalism</option><option>Car Accident</option><option>Child Abuse</option><option>Childbirth</option><option>Classism</option><option>Death</option><option>Decapitation</option><option>Depictions of Medical Procedures</option><option>Depression</option><option>Dissociation</option><option>Domestic Violence</option><option>Drug Use</option><option>Drunkenness</option><option>Eating Disorder</option><option>Emotional Abuse</option><option>Enslavement/Coersion</option><option>Eugenics</option><option>Gore</option><option>Hallucinations</option><option>Homophobia</option><option>Incest</option><option>Insects</option><option>Islamophobia</option><option>Kidnapping</option><option>Mental Abuse</option><option>Mental Illness</option><option>Miscarriages</option><option>Murder</option><option>Nazi Symbolism/Paraphernalia</option><option>Nazism</option><option>Needles</option><option>Neglect</option><option>OCD</option><option>Panic Attacks</option><option>Paranoia</option><option>Pedophilia</option><option>Personality Disorder</option><option>Physical Abuse</option><option>Pornography</option><option>Pregnancy</option><option>Prostitution</option><option>Psychosis</option><option>Racial Slurs</option><option>Racism</option><option>Rape</option><option>Scarification</option><option>Schizophrenia</option><option>Self-Harm</option><option>Sex-Positive Shaming</option><option>Sexism</option><option>Sexual Abuse</option><option>Sexual Assault</option><option>Sexual Harrassment</option><option>Sexual Slurs</option><option>Shooting</option><option>Skeletons</option><option>Skulls</option><option>Slut Shaming</option><option>Smoking</option><option>Snakes</option><option>Spiders</option><option>Stalking</option><option>Substance Abuse</option><option>Suicide</option><option>Swearing</option><option>Terrorism</option><option>Torture</option><option>Transphobia</option><option>Verbal Abuse</option><option>Violence</option><option>Vomit</option><option>Warfare</option><option>Weapons</option><option>Xenophobia</option>
+        </optgroup>
+      </select>
+      <span class="c-error">Note: You can <em>create</em> RedFlag links without JavaScript, but it's needed to view them.</span>
+    </p>
+    <p>
+      <label class="bold" for="url">
+        URL
+      </label>
+      <input id="url" name="at" class="card w-100" placeholder="Link to Warn About" />
+    </p>
+    <p>
+      <button class="rounded btn primary">
+        Get Link!
+      </button>
+    </p>
+    <span class="c-error">You will be redirected to the warning page, where you can retrieve your RedFlag link from the browser's URL.</span>
+  </form>
+</main>
+<footer class="bg-gray pv4 mb0">
+  <section class="row">
+    <div class="9 col mb3">
+      <span>Like what we're doing?</span>
+      <a class="small rounded btn primary" href="https://buymeacoffee.com/robbieantenesse" target="_blank">
+        Buy Me a Coffee
+      </a>
+    </div>
+    <div class="3 col">
+      <a class="small rounded btn" href="https://github.com/Alamantus/RedFlag2/issues">
+        Report an Issue
+      </a>
+    </div>
+  </section>
+</footer>
+<script type="module" src="web_modules/app.js"></script>
 <!-- Umami -->
 <!-- <script async defer data-website-id="ea90abd1-2f69-4f4f-9db8-03ef01dbf185" src="https://analytics.alamantus.com/umami.js"></script> -->
 <!-- End Umami Code -->
