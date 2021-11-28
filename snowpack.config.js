@@ -11,7 +11,9 @@ module.exports = {
     /* ... */
   ],
   packageOptions: {
-    /* ... */
+    knownEntrypoints: [
+      './about.html',
+    ],
   },
   devOptions: {
     /* ... */
